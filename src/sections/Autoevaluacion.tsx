@@ -20,7 +20,9 @@ const Autoevaluacion = () => {
 
         <Card className="max-w-2xl mx-auto mb-12">
           <CardHeader>
-            <CardTitle className="text-2xl">{t('evaluation.template.title')}/CardTitle>
+            <CardTitle className="text-2xl">
+             {t('evaluation.template.title')}
+            </CardTitle>
             <p className="text-muted-foreground">
              {t('evaluation.template.subtitle')}
             </p>
