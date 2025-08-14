@@ -80,28 +80,18 @@ const translations = {
     'methodology.step4.desc': 'Te entregamos un informe detallado con conclusiones específicas y un plan de acción claro, priorizado y ejecutable para optimizar las finanzas de tu empresa de forma inmediata y sostenible en el tiempo.',
 
     // Experience
-"experience": {
-  "title": {
-    "part1": "Nuestra",
-    "part2": "Experiencia"
-  },
-  "description": "Estos son algunos ejemplos de cómo ayudamos a nuestros clientes a mejorar su salud financiera y su posicionamiento en el mercado:",
-  "card1": {
-    "title": "Startup tecnológica",
-    "metric": "30% de reducción de intereses",
-    "desc": "Tras optimizar estructura financiera y renegociar condiciones."
-  },
-  "card2": {
-    "title": "Aseguradora nacional",
-    "metric": "Aumento de liquidez del 45%",
-    "desc": "Gracias a la reducción en los días de cobro y a procesos eficientes."
-  },
-  "card3": {
-    "title": "E-commerce",
-    "metric": "100% confianza",
-    "desc": "4 ajustes menores realizados en preauditoría, sin observaciones críticas."
-  }
-},
+    'experience.title.part1': 'Nuestra ',
+    'experience.title.part2': 'Experiencia',
+    'experience.description': "Estos son algunos ejemplos de cómo ayudamos a nuestros clientes a mejorar su salud financiera y su posicionamiento en el mercado:",
+    'experience.card1.title': 'Startup tecnológica',
+    'experience.card1.metric': "30% de reducción de intereses",
+    'experience.card1.desc': "Tras optimizar estructura financiera y renegociar condiciones.",
+    'experience.card2.title': "Aseguradora nacional",
+    'experience.card2.metric': "Aumento de liquidez del 45%",
+    'experience.card2.desc': "Gracias a la reducción en los días de cobro y a procesos eficientes.",
+    'experience.card3.title': "E-commerce",
+    'experience.card3.metric': "100% confianza",
+    'experience.card3.desc': "4 ajustes menores realizados en preauditoría, sin observaciones críticas.",
 
     // FAQ
     'faq.title.part1': 'Preguntas ',
@@ -150,15 +140,16 @@ const translations = {
   en: {
     // Navbar
     'nav.home': '',
-    'nav.evaluation': 'Self-Assessment',
-    'nav.faq': 'Frequently Asked Questions',
+    'nav.evaluation': 'Financial Template',
+    'nav.faq': 'FAQ',
     'nav.contact': 'Contact',
 
     // Hero
     'hero.title.part1': 'Drive growth and ',
     'hero.title.rentable': 'maximize profits',
     'hero.title.part2': ' with a solid ',
-    'hero.title.estrategia': 'financial a proven',
+    'hero.title.estrategia': 'financial proven',
+    'hero.title.part3': ' strategy',
     'hero.subtitle': 'whatever your industry',
     'hero.cta': 'Request a consultation',
 
@@ -189,7 +180,7 @@ const translations = {
     'services.cta': 'Request a consultation',
 
     // Evaluation
-    'evaluation.title.part1': 'Financial',
+    'evaluation.title.part1': 'Financial ',
     'evaluation.title.part2': 'self-assessment',
     'evaluation.description': 'On this same page you have a tool to self-assess and diagnose your company, know the financial health and know where the key failures are. You are free to try it or check your statements for free.',
     'evaluation.download': 'Download PDF template',
@@ -218,28 +209,18 @@ const translations = {
     'methodology.step4.desc': 'We deliver a detailed report with specific conclusions and a clear, prioritized and executable action plan to optimize your company\'s finances immediately and sustainably over time.',
 
     // Experience
-"experience": {
-  "title": {
-    "part1": "Our",
-    "part2": "Experience"
-  },
-  "description": "Here are some examples of how we help our clients improve their financial health and market positioning:",
-  "card1": {
-    "title": "Tech Startup",
-    "metric": "30% interest reduction",
-    "desc": "After optimizing financial structure and renegotiating terms."
-  },
-  "card2": {
-    "title": "National Insurance Company",
-    "metric": "45% increase in liquidity",
-    "desc": "Thanks to reduced collection days and efficient processes."
-  },
-  "card3": {
-    "title": "E-commerce",
-    "metric": "100% confidence",
-    "desc": "4 minor adjustments made during pre-audit, with no critical observations."
-  }
-},
+    "experience.title.part1": "Our ",
+    "experience.title.part2": "Experience",
+    "experience.description": "Here are some examples of how we help our clients improve their financial health and market positioning:",
+    "experience.card1.title": "Tech Startup",
+    "experience.card1.metric": "30% Interest Reduction",
+    "experience.card1.desc": "After optimizing the financial structure and renegotiating terms.",
+    "experience.card2.title": "National Insurance Company",
+    "experience.card2.metric": "45% Increase in Liquidity",
+    "experience.card2.desc": "Thanks to reduced collection days and efficient processes.",
+    "experience.card3.title": "E-commerce",
+    "experience.card3.metric": "100% Confidence",
+    "experience.card3.desc": "4 minor adjustments made during pre-audit, with no critical observations.",
 
     // FAQ
     'faq.title.part1': 'FA',

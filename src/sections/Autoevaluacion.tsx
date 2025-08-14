@@ -41,7 +41,7 @@ const Autoevaluacion = () => {
               </ul>
             </div>
             <Button size="lg" className="bg-hero hover:bg-hero-strong text-hero-foreground font-semibold" asChild>
-              <a href="/diagnostico-financiero.pdf" download>
+              <a href="/Simulation-Template.xlsx" download>
                 <Download className="mr-2" size={20} />
                 {t('evaluation.download')}
               </a>
@@ -50,7 +50,9 @@ const Autoevaluacion = () => {
         </Card>
 
         <div className="bg-muted/30 rounded-lg p-8">
-          <h3 className="text-2xl font-semibold mb-4">¿Ya has completado tu autoevaluación?</h3>
+          <h3 className="text-2xl font-semibold mb-4">
+            {t('evaluation.question.completed')}
+          </h3>
           <p className="text-muted-foreground mb-6">
             {t('evaluation.contact.text')}
           </p>
