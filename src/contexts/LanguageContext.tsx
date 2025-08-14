@@ -64,7 +64,7 @@ const translations = {
     'evaluation.list.item2': 'Evaluación de liquidez y solvencia',
     'evaluation.list.item3': 'Diagnóstico de rentabilidad',
     'evaluation.list.item4': 'Identificación de áreas de mejora',
-    'evaluation.completed.title': '¿Ya has completado tu autoevaluación?',
+    'evaluation.question.completed': '¿Ya has completado tu autoevaluación?',
 
     // Methodology
     'methodology.title.part1': 'Nuestra ',
@@ -192,7 +192,7 @@ const translations = {
     'evaluation.list.item2': 'Assessment of liquidity and solvency',
     'evaluation.list.item3': 'Profitability diagnosis',
     'evaluation.list.item4': 'Identification of improvement areas',
-    'evaluation.completed.title': 'Have you completed your self-assessment?',
+    'evaluation.question.completed': 'Have you completed your self-assessment?',
 
 
     // Methodology
