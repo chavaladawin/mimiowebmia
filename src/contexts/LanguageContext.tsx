@@ -101,7 +101,7 @@ const translations = {
     "metric": "100% confianza",
     "desc": "4 ajustes menores realizados en preauditoría, sin observaciones críticas."
   }
-};
+},
 
     // FAQ
     'faq.title.part1': 'Preguntas ',
@@ -239,7 +239,7 @@ const translations = {
     "metric": "100% confidence",
     "desc": "4 minor adjustments made during pre-audit, with no critical observations."
   }
-};
+},
 
     // FAQ
     'faq.title.part1': 'FA',
