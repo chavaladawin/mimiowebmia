@@ -137,8 +137,8 @@ const translations = {
     'contact.email': 'Email',
     'contact.message': 'Mensaje',
     'contact.send': 'Enviar',
-    "contact.description": "Déjanos tus datos y cuéntanos tu situación."
-    "contact.company": "Empresa"
+    "contact.description": "Déjanos tus datos y cuéntanos tu situación.",
+    "contact.company": "Empresa",
 
 
     // Footer
@@ -275,8 +275,8 @@ const translations = {
     'contact.email': 'Email',
     'contact.message': 'Message',
     'contact.send': 'Send',
-    "contact.description": "Leave us your details and tell us about your situation."
-    "contact.company": "Company"
+    "contact.description": "Leave us your details and tell us about your situation.",
+    "contact.company": "Company",
 
     // Footer
     'footer.rights': 'All rights reserved.',
