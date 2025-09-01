@@ -21,7 +21,7 @@ const translations = {
     'hero.title.rentable': 'rentable',
     'hero.title.part2': ' con una estrategia ',
     'hero.title.estrategia': 'financiera',
-    'hero.title.part3': '',
+    'hero.title.part3': ' ',
     'hero.subtitle': 'sea cual sea tu sector',
     'hero.cta': 'Solicita una consultoría',
     'hero.whatsapp': 'Háblanos por WhatsApp',
@@ -278,8 +278,9 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   const [language, setLanguage] = useState<Language>('es');
 
   const t = (key: string): string => {
-    return translations[language][key as keyof typeof translations[typeof language]] || key;
-  };
+    const value = translations[language][key as keyof typeof translations[typeof language]];
+    return value !== undefined ? value : key;
+};;
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage, t }}>
