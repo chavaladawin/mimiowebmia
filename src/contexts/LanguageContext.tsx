@@ -25,6 +25,7 @@ const translations = {
     'hero.subtitle': 'sea cual sea tu sector',
     'hero.cta': 'Solicita una consultoría',
     'hero.whatsapp': 'Háblanos por WhatsApp',
+    'hero.whatsappMessage': 'Hola, quiero más información sobre Nuovo Finance',
 
     // Finance Intro
     'financeIntro.title.part1': 'La importancia de las ',
@@ -154,6 +155,7 @@ const translations = {
     'hero.subtitle': 'whatever your industry',
     'hero.cta': 'Request a consultation',
     'hero.whatsapp': 'Talk to us on WhatsApp',
+    'hero.whatsappMessage': 'Hello, I want more information about Nuovo Finance'
 
 
     // Finance Intro

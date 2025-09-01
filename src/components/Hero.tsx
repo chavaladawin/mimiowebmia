@@ -44,7 +44,7 @@ const Hero = () => {
                 className="bg-green-500 text-white hover:bg-green-600 shadow-lg font-bold px-10 py-4 text-lg rounded-xl w-[260px]"
               >
                 <a
-                  href="https://wa.me/34657169972?text=Hola%2C%20quiero%20más%20información%20sobre%20Nuovo%20Finance"
+                   href={`https://wa.me/34657169972?text=${encodeURIComponent(t('hero.whatsappMessage'))}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
