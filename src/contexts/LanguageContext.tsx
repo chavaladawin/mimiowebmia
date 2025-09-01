@@ -155,7 +155,7 @@ const translations = {
     'hero.subtitle': 'whatever your industry',
     'hero.cta': 'Request a consultation',
     'hero.whatsapp': 'Talk to us on WhatsApp',
-    'hero.whatsappMessage': 'Hello, I want more information about Nuovo Finance'
+    'hero.whatsappMessage': 'Hello, I want more information about Nuovo Finance',
 
 
     // Finance Intro
