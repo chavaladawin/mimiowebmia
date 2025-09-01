@@ -19,11 +19,12 @@ const translations = {
     // Hero
     'hero.title.part1': 'Haz tu empresa más ',
     'hero.title.rentable': 'rentable',
-    'hero.title.part2': ' con una ',
-    'hero.title.estrategia': 'estrategia financiera',
-    'hero.title.part3': ' sólida',
+    'hero.title.part2': ' con una estrategia ',
+    'hero.title.estrategia': 'financiera',
+    'hero.title.part3': ' .',
     'hero.subtitle': 'sea cual sea tu sector',
     'hero.cta': 'Solicita una consultoría',
+    'hero.whatsapp': 'Háblanos por WhatsApp',
 
     // Finance Intro
     'financeIntro.title.part1': 'La importancia de las ',
@@ -147,11 +148,13 @@ const translations = {
     // Hero
     'hero.title.part1': 'Drive growth and ',
     'hero.title.rentable': 'maximize profits',
-    'hero.title.part2': ' with a solid ',
-    'hero.title.estrategia': 'financial proven',
+    'hero.title.part2': ' with a ',
+    'hero.title.estrategia': 'financial',
     'hero.title.part3': ' strategy',
     'hero.subtitle': 'whatever your industry',
     'hero.cta': 'Request a consultation',
+    'hero.whatsapp': 'Talk to us on WhatsApp',
+
 
     // Finance Intro
     'financeIntro.title.part1': 'The relevance of ',

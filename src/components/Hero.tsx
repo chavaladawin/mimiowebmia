@@ -14,14 +14,42 @@ const Hero = () => {
         <div className="container py-20 md:py-28 text-center">
           <div className="max-w-3xl mx-auto">
             <h1 className="text-4xl font-extrabold leading-tight tracking-tight text-hero-foreground md:text-6xl">
-              {t('hero.title.part1')}<span className="font-black underline">{t('hero.title.rentable')}</span>{t('hero.title.part2')}<span className="font-black underline">{t('hero.title.estrategia')}</span>{t('hero.title.part3')}
+              {t('hero.title.part1')}
+              <span className="font-black underline">{t('hero.title.rentable')}</span>
+              {t('hero.title.part2')}
+              <span className="font-black underline">{t('hero.title.estrategia')}</span>
+              {t('hero.title.part3')}
             </h1>
             <p className="mt-4 text-sm uppercase tracking-[0.2em] text-hero-foreground/80">
               {t('hero.subtitle')}
             </p>
-            <div className="mt-8 flex justify-center">
-              <Button size="xl" asChild aria-label={t('hero.cta')} className="bg-white text-hero hover:bg-white/90 shadow-lg font-bold px-8 py-4 text-lg border-2 border-white">
+
+            {/* Botones CTA */}
+            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+              {/* Botón de consultoría */}
+              <Button
+                size="xl"
+                asChild
+                aria-label={t('hero.cta')}
+                className="bg-white text-hero hover:bg-white/90 shadow-lg font-bold px-8 py-4 text-lg border-2 border-white"
+              >
                 <a href="#contacto">{t('hero.cta')}</a>
+              </Button>
+
+              {/* Botón de WhatsApp */}
+              <Button
+                size="xl"
+                asChild
+                aria-label={t('hero.whatsapp')}
+                className="bg-green-500 text-white hover:bg-green-600 shadow-lg font-bold px-10 py-4 text-lg rounded-xl w-[260px]"
+              >
+                <a
+                  href="https://wa.me/34657169972?text=Hola%2C%20quiero%20más%20información%20sobre%20Nuovo%20Finance"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t('hero.whatsapp')}
+                </a>
               </Button>
             </div>
           </div>
@@ -42,3 +70,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
