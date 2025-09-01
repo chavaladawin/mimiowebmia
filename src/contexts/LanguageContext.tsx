@@ -21,7 +21,7 @@ const translations = {
     'hero.title.rentable': 'rentable',
     'hero.title.part2': ' con una estrategia ',
     'hero.title.estrategia': 'financiera',
-    'hero.title.part3': ' .',
+    'hero.title.part3': '.',
     'hero.subtitle': 'sea cual sea tu sector',
     'hero.cta': 'Solicita una consultoría',
     'hero.whatsapp': 'Háblanos por WhatsApp',
