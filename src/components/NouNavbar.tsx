@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Home, HelpCircle, Phone } from "lucide-react";
+import { Home } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const NouNavbar = () => {
@@ -15,9 +15,8 @@ const NouNavbar = () => {
           <a href="#inicio" className="hover:text-foreground transition-colors flex items-center gap-1">
             <Home size={16} />
           </a>
-          <a href="#autoevaluacion" className="hover:text-foreground transition-colors">{t('nav.evaluation')}</a>
-          <a href="#preguntas-frecuentes" className="hover:text-foreground transition-colors">{t('nav.faq')}</a>
-          <a href="#contacto" className="hover:text-foreground transition-colors">{t('nav.contact')}</a>
+          <a href="/methodology" className="hover:text-foreground transition-colors">{t('nav.methodology')}</a>
+          <a href="/methodology#sobre-nosotros" className="hover:text-foreground transition-colors">{t('nav.about')}</a>
         </nav>
         <div className="hidden md:flex items-center gap-2 text-sm text-muted-foreground">
           <a 

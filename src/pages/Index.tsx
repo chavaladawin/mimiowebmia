@@ -1,14 +1,8 @@
 import NouNavbar from "@/components/NouNavbar";
 import Hero from "@/components/Hero";
-import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Building2, PiggyBank, CreditCard, Linkedin, Facebook } from "lucide-react";
+import { Linkedin, Facebook } from "lucide-react";
 import FinanceIntro from "@/sections/FinanceIntro";
-import HowWeWork from "@/sections/HowWeWork";
-import Experience from "@/sections/Experience";
-import AboutUs from "@/sections/AboutUs";
-import Autoevaluacion from "@/sections/Autoevaluacion";
-import FAQ from "@/sections/FAQ";
 import ContactSection from "@/sections/ContactSection";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -22,48 +16,25 @@ const Index = () => {
           <Hero />
         </div>
         <FinanceIntro />
-        <section id="productos" className="py-16">
+        <section id="productos" className="py-16 border-t">
           <div className="container text-center">
             <header className="mb-12">
               <h2 className="text-4xl font-bold mb-4">
                 <span className="text-foreground">{t('services.title.part1')}</span>
                 <span className="text-hero">{t('services.title.part2')}</span>
               </h2>
-              <p className="text-lg text-muted-foreground">{t('services.subtitle')}</p>
             </header>
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-              <Card className="transition-shadow hover:shadow-lg">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 justify-center"><PiggyBank className="text-hero" /> {t('services.analysis.title')}</CardTitle>
-                </CardHeader>
-                <CardContent className="text-muted-foreground">
-                  {t('services.analysis.desc')}
-                </CardContent>
-              </Card>
-              <Card className="transition-shadow hover:shadow-lg">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 justify-center"><CreditCard className="text-hero" /> {t('services.preaudit.title')}</CardTitle>
-                </CardHeader>
-                <CardContent className="text-muted-foreground">
-                  {t('services.preaudit.desc')}
-                </CardContent>
-              </Card>
-              <Card className="transition-shadow hover:shadow-lg">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 justify-center"><Building2 className="text-hero" /> {t('services.models.title')}</CardTitle>
-                </CardHeader>
-                <CardContent className="text-muted-foreground">
-                  {t('services.models.desc')}
-                </CardContent>
-              </Card>
-              <Card className="transition-shadow hover:shadow-lg">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 justify-center"><Building2 className="text-hero" /> {t('services.iso.title')}</CardTitle>
-                </CardHeader>
-                <CardContent className="text-muted-foreground">
-                  {t('services.iso.desc')}
-                </CardContent>
-              </Card>
+            <div className="grid gap-6 md:grid-cols-2">
+              <ul className="text-lg text-muted-foreground list-disc list-inside space-y-2">
+                <li>{t('services.example1')}</li>
+                <li>{t('services.example2')}</li>
+                <li>{t('services.example3')}</li>
+              </ul>
+              <ul className="text-lg text-muted-foreground list-disc list-inside space-y-2">
+                <li>{t('services.example4')}</li>
+                <li>{t('services.example5')}</li>
+                <li>{t('services.example6')}</li>
+              </ul>
             </div>
             <div className="mt-8">
               <Button size="lg" className="bg-hero hover:bg-hero-strong text-hero-foreground font-semibold px-8" asChild>
@@ -72,17 +43,6 @@ const Index = () => {
             </div>
           </div>
         </section>
-
-        <Autoevaluacion />
-
-        <HowWeWork />
-
-        <Experience />
-
-        <AboutUs />
-
-        <FAQ />
-
         <ContactSection />
       </main>
       <footer className="border-t py-8">
