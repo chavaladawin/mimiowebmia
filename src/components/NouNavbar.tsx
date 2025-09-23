@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Home } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const NouNavbar = () => {
@@ -9,17 +10,18 @@ const NouNavbar = () => {
     <header className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
-        <a href="/" aria-label="Nuovo Finance" className="text-xl font-semibold bg-hero-gradient bg-clip-text text-transparent">
+        <Link to="/" aria-label="Nuovo Finance" className="text-xl font-semibold bg-hero-gradient bg-clip-text text-transparent">
           Nuovo Finance
-        </a>
+        </Link>
 
         {/* Menú de navegación */}
         <nav className="hidden gap-8 text-sm text-muted-foreground md:flex" aria-label="Primary">
-          <a href="/" className="hover:text-foreground transition-colors flex items-center gap-1">
+          <Link to="/" className="hover:text-foreground transition-colors flex items-center gap-1">
             <Home size={16} />
-          </a>
-          <a href="/methodology" className="hover:text-foreground transition-colors">{t('nav.methodology')}</a>
-          <a href="/about-us" className="hover:text-foreground transition-colors">{t('nav.about')}</a>
+            {t('nav.home')}
+          </Link>
+          <Link to="/methodology" className="hover:text-foreground transition-colors">{t('nav.methodology')}</Link>
+          <Link to="/about-us" className="hover:text-foreground transition-colors">{t('nav.about')}</Link>
         </nav>
 
         {/* Selector de idioma */}
