@@ -6,25 +6,25 @@ const phases = [
     n: 1,
     title: "Contacto Inicial",
     desc: "Produciéndose así la primera interacción con las partes interesadas (clientes, equipo, colaboradores) para definir el propósito, alcance y expectativas del proyecto.",
-    icon: <Phone size={48} />
+    icon: <Phone size={24} />
   },
   {
     n: 2,
     title: "Puesta en Común y Acuerdos Preliminares",
     desc: "Pacto de acuerdos respecto a las expectativas y presentación de resultados o avances iniciales para validar el enfoque del proyecto.",
-    icon: <FileText size={48} />
+    icon: <FileText size={24} />
   },
   {
     n: 3,
     title: "Investigación",
     desc: "Se profundiza en la ejecución del proyecto mediante investigación, análisis o desarrollo de soluciones específicas.",
-    icon: <Search size={48} />
+    icon: <Search size={24} />
   },
   {
     n: 4,
     title: "Entrega",
     desc: "Finalización del proyecto entregando los resultados acordados y evaluando el cumplimiento de los objetivos.",
-    icon: <CheckCircle size={48} />
+    icon: <CheckCircle size={24} />
   },
 ];
 
@@ -49,11 +49,14 @@ const HowWeWork = () => {
         <div className="relative max-w-5xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {phases.map((p) => (
             <div key={p.n} className="flex flex-col items-center text-center bg-card rounded-lg p-6 shadow border">
-              <div className="w-16 h-16 mb-4 flex items-center justify-center text-hero">
-                {p.icon}
+              <div className="flex items-center gap-2 mb-4">
+                <div className="text-hero">{p.icon}</div>
+                <h3 className="font-semibold text-lg">{p.title}</h3>
               </div>
-              <h3 className="font-semibold text-lg mb-2">{p.title}</h3>
-              <p className="text-muted-foreground text-sm">{p.desc}</p>
+              <div className="flex items-start gap-2">
+                <div className="text-hero">{p.icon}</div>
+                <p className="text-muted-foreground text-sm text-left">{p.desc}</p>
+              </div>
             </div>
           ))}
         </div>

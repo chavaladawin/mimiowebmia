@@ -16,43 +16,6 @@ const Index = () => {
           <Hero />
         </div>
         <FinanceIntro />
-
-        {/* Sección "Cuándo necesitas una consultoría" */}
-        <section id="productos" className="py-16 border-t">
-          <div className="container text-center">
-            <header className="mb-12">
-              <h2 className="text-4xl font-bold mb-4">
-                <span className="text-foreground">Cuando necesitas una </span>
-                <span className="text-hero">consultoría especializada en educación superior?</span>
-              </h2>
-            </header>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto items-start text-left">
-              <ul className="text-lg text-muted-foreground list-disc list-inside space-y-2">
-                <li>Previa a auditoría financiera</li>
-                <li>Crisis financiera</li>
-                <li>Gestión de la deuda ineficiente</li>
-                <li>Recursos ociosos</li>
-                <li>Gestión de riesgos y sostenibilidad</li>
-              </ul>
-
-              <ul className="text-lg text-muted-foreground list-disc list-inside space-y-2">
-                <li>Control presupuestario</li>
-                <li>Análisis de la salud financiera</li>
-                <li>Cambios en el sector</li>
-                <li>Eres una <strong>universidad</strong></li>
-                <li>Eres una <strong>entidad relacionada con educación superior</strong></li>
-              </ul>
-            </div>
-
-            <div className="mt-8">
-              <Button size="lg" className="bg-hero hover:bg-hero-strong text-hero-foreground font-semibold px-8" asChild>
-                <a href="#contacto">Solicita una consultoría</a>
-              </Button>
-            </div>
-          </div>
-        </section>
-
         <ContactSection />
       </main>
 

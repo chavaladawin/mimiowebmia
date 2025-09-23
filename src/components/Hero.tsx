@@ -13,8 +13,8 @@ const Hero = () => {
       <div className="bg-hero-gradient">
         <div className="container py-16 md:py-24 text-center max-w-4xl mx-auto">
           <h1 className="text-3xl md:text-5xl font-extrabold leading-tight tracking-tight text-hero-foreground">
-            <span className="block underline font-black">Realizamos consultoría financiera</span>
-            <span className="block underline font-black">especializada en educación superior</span>
+            <span className="block">Realizamos <span className="underline font-black">consultoría financiera</span></span>
+            <span className="block">especializada en <span className="underline font-black">educación superior</span></span>
           </h1>
           <p className="mt-4 text-sm md:text-lg uppercase tracking-[0.1em] text-hero-foreground/80">
             Ayudamos a las universidades y entidades de educación superior a gestionar sus finanzas

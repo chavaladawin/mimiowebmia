@@ -19,7 +19,7 @@ const NouNavbar = () => {
             <Home size={16} />
           </a>
           <a href="/methodology" className="hover:text-foreground transition-colors">{t('nav.methodology')}</a>
-          <a href="/methodology#sobre-nosotros" className="hover:text-foreground transition-colors">{t('nav.about')}</a>
+          <a href="/about-us" className="hover:text-foreground transition-colors">{t('nav.about')}</a>
         </nav>
 
         {/* Selector de idioma */}
