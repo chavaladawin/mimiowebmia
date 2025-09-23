@@ -12,10 +12,10 @@ const Hero = () => {
     <section className="relative overflow-hidden bg-hero-gradient">
       <div className="container py-16 md:py-24 flex flex-col items-center justify-center text-center max-w-4xl mx-auto">
         <div className="inline-block max-w-md mx-auto">
-          <h1
-            className="text-3xl md:text-5xl font-extrabold leading-tight tracking-tight text-hero-foreground"
-            dangerouslySetInnerHTML={{ __html: t('hero.title') }}
-          />
+          <h1 className="text-3xl md:text-5xl font-extrabold leading-tight tracking-tight text-hero-foreground">
+            <span className="block whitespace-nowrap">{t('hero.title.part1')}<span className="underline font-black">{t('hero.title.rentable')}</span></span>
+            <span className="block whitespace-nowrap">{t('hero.title.part2')}<span className="underline font-black">{t('hero.title.estrategia')}</span></span>
+          </h1>
         </div>
         <p className="mt-4 text-sm md:text-lg uppercase tracking-[0.1em] text-hero-foreground/80">
           {t('hero.subtitle')}

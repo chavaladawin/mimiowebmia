@@ -13,7 +13,10 @@ const AboutUs = () => {
           <div className="container text-center max-w-4xl mx-auto">
             {/* Nuestra Misión */}
             <header className="mb-12">
-              <h2 className="text-4xl font-bold mb-4">{t('aboutUs.title.mission')}</h2>
+              <h2 className="text-4xl font-bold mb-4">
+                <span className="text-foreground">{t('aboutUs.title.part1')}</span>
+                <span className="text-hero">{t('aboutUs.title.mission')}</span>
+              </h2>
             </header>
             <p
               className="text-muted-foreground mb-12 text-lg leading-relaxed"
@@ -22,7 +25,10 @@ const AboutUs = () => {
 
             {/* Nuestra Experiencia */}
             <header className="mb-12">
-              <h2 className="text-4xl font-bold mb-4">{t('aboutUs.title.experience')}</h2>
+              <h2 className="text-4xl font-bold mb-4">
+                <span className="text-foreground">{t('aboutUs.title.part1')}</span>
+                <span className="text-hero">{t('aboutUs.title.experience')}</span>
+              </h2>
             </header>
             <p
               className="text-muted-foreground text-base leading-relaxed text-justify"
