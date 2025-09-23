@@ -15,5 +15,3 @@ const Methodology = () => {
 };
 
 export default Methodology;
-
-export default Methodology;
