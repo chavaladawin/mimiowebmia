@@ -1,33 +1,30 @@
 import { useLanguage } from "@/contexts/LanguageContext";
-import ContactIcon from "@/assets/icons/contact.png"; // Ejemplo de iconos
-import AgreementIcon from "@/assets/icons/agreement.png";
-import ResearchIcon from "@/assets/icons/research.png";
-import DeliveryIcon from "@/assets/icons/delivery.png";
+import { Phone, FileText, Search, CheckCircle } from "lucide-react";
 
 const phases = [
   {
     n: 1,
     title: "Contacto Inicial",
     desc: "Produciéndose así la primera interacción con las partes interesadas (clientes, equipo, colaboradores) para definir el propósito, alcance y expectativas del proyecto.",
-    icon: ContactIcon
+    icon: <Phone size={48} />
   },
   {
     n: 2,
     title: "Puesta en Común y Acuerdos Preliminares",
     desc: "Pacto de acuerdos respecto a las expectativas y presentación de resultados o avances iniciales para validar el enfoque del proyecto.",
-    icon: AgreementIcon
+    icon: <FileText size={48} />
   },
   {
     n: 3,
     title: "Investigación",
     desc: "Se profundiza en la ejecución del proyecto mediante investigación, análisis o desarrollo de soluciones específicas.",
-    icon: ResearchIcon
+    icon: <Search size={48} />
   },
   {
     n: 4,
     title: "Entrega",
     desc: "Finalización del proyecto entregando los resultados acordados y evaluando el cumplimiento de los objetivos.",
-    icon: DeliveryIcon
+    icon: <CheckCircle size={48} />
   },
 ];
 
@@ -52,7 +49,9 @@ const HowWeWork = () => {
         <div className="relative max-w-5xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {phases.map((p) => (
             <div key={p.n} className="flex flex-col items-center text-center bg-card rounded-lg p-6 shadow border">
-              <img src={p.icon} alt={p.title} className="w-16 h-16 mb-4" />
+              <div className="w-16 h-16 mb-4 flex items-center justify-center text-hero">
+                {p.icon}
+              </div>
               <h3 className="font-semibold text-lg mb-2">{p.title}</h3>
               <p className="text-muted-foreground text-sm">{p.desc}</p>
             </div>
