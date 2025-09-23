@@ -17,32 +17,32 @@ const Index = () => {
         </div>
         <FinanceIntro />
         <section id="productos" className="py-16 border-t">
-          <div className="container text-center">
+  	  <div className="container text-center">
             <header className="mb-12">
               <h2 className="text-4xl font-bold mb-4">
-                <span className="text-foreground">{t('services.title.part1')}</span>
-                <span className="text-hero">{t('services.title.part2')}</span>
+                <span className="text-foreground">Cuando necesitas una</span>
+                <span className="text-hero">consultoría especializada en la educación superior?</span>
               </h2>
             </header>
-            <div className="grid gap-6 md:grid-cols-2">
-              <ul className="text-lg text-muted-foreground list-disc list-inside space-y-2">
-                <li>{t('services.example1')}</li>
-                <li>{t('services.example2')}</li>
-                <li>{t('services.example3')}</li>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto items-center">
+              <ul className="text-lg text-muted-foreground list-disc list-inside space-y-2 text-center">
+                <li>Eres una <strong>universidad</strong></li>
               </ul>
-              <ul className="text-lg text-muted-foreground list-disc list-inside space-y-2">
-                <li>{t('services.example4')}</li>
-                <li>{t('services.example5')}</li>
-                <li>{t('services.example6')}</li>
+      
+              {/* línea central separadora */}
+              <div className="h-full w-px bg-muted mx-auto"></div>
+      
+              <ul className="text-lg text-muted-foreground list-disc list-inside space-y-2 text-center">
+                <li>Eres una <strong>entidad relacionada con educación superior</strong></li>
               </ul>
-            </div>
-            <div className="mt-8">
-              <Button size="lg" className="bg-hero hover:bg-hero-strong text-hero-foreground font-semibold px-8" asChild>
-                <a href="#contacto">{t('services.cta')}</a>
-              </Button>
-            </div>
-          </div>
-        </section>
+             </div>
+             <div className="mt-8">
+               <Button size="lg" className="bg-hero hover:bg-hero-strong text-hero-foreground font-semibold px-8" asChild>
+                 <a href="#contacto">Solicita una consultoría</a>
+               </Button>
+              </div>
+             </div>
+            </section>
         <ContactSection />
       </main>
       <footer className="border-t py-8">

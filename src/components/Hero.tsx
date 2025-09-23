@@ -11,47 +11,38 @@ const Hero = () => {
   return (
     <section className="relative overflow-hidden">
       <div className="bg-hero-gradient">
-        <div className="container py-20 md:py-28 text-center">
-          <div className="max-w-3xl mx-auto">
-            <h1 className="text-4xl font-extrabold leading-tight tracking-tight text-hero-foreground md:text-6xl">
-              {t('hero.title.part1')}
-              <span className="font-black underline">{t('hero.title.rentable')}</span>
-              {t('hero.title.part2')}
-              <span className="font-black underline">{t('hero.title.estrategia')}</span>
-              {t('hero.title.part3')}
-            </h1>
-            <p className="mt-4 text-sm uppercase tracking-[0.2em] text-hero-foreground/80">
-              {t('hero.subtitle')}
-            </p>
+        <div className="container py-16 md:py-24 text-center max-w-4xl mx-auto">
+          <h1 className="text-3xl md:text-5xl font-extrabold leading-tight tracking-tight text-hero-foreground">
+            Realizamos <span className="underline font-black">consultoría financiera</span> especializada en <span className="underline font-black">educación superior</span>
+          </h1>
+          <p className="mt-4 text-sm md:text-lg uppercase tracking-[0.1em] text-hero-foreground/80">
+            Ayudamos a las universidades y entidades de educación superior a gestionar sus finanzas
+          </p>
 
-            {/* Botones CTA */}
-            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-              {/* Botón de consultoría */}
-              <Button
-                size="xl"
-                asChild
-                aria-label={t('hero.cta')}
-                className="bg-white text-hero hover:bg-white/90 shadow-lg font-bold px-8 py-4 text-lg border-2 border-white"
+          {/* Botones CTA */}
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
+              size="xl"
+              asChild
+              aria-label="Solicita una consultoría"
+              className="bg-white text-hero hover:bg-white/90 shadow-lg font-bold px-8 py-4 text-lg border-2 border-white"
+            >
+              <a href="#contacto">Solicita una consultoría</a>
+            </Button>
+            <Button
+              size="xl"
+              asChild
+              aria-label="Háblanos por WhatsApp"
+              className="bg-green-500 text-white hover:bg-green-600 shadow-lg font-bold px-10 py-4 text-lg rounded-xl w-[260px]"
+            >
+              <a
+                href={`https://wa.me/34657169972?text=${encodeURIComponent("Hola, quiero más información sobre Nuovo Finance")}`}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <a href="#contacto">{t('hero.cta')}</a>
-              </Button>
-
-              {/* Botón de WhatsApp */}
-              <Button
-                size="xl"
-                asChild
-                aria-label={t('hero.whatsapp')}
-                className="bg-green-500 text-white hover:bg-green-600 shadow-lg font-bold px-10 py-4 text-lg rounded-xl w-[260px]"
-              >
-                <a
-                   href={`https://wa.me/34657169972?text=${encodeURIComponent(t('hero.whatsappMessage'))}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {t('hero.whatsapp')}
-                </a>
-              </Button>
-            </div>
+                Háblanos por WhatsApp
+              </a>
+            </Button>
           </div>
         </div>
       </div>
@@ -70,4 +61,3 @@ const Hero = () => {
 };
 
 export default Hero;
-

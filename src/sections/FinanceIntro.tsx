@@ -12,10 +12,12 @@ const FinanceIntro = () => {
           </h2>
         </header>
         <ul className="text-lg text-muted-foreground max-w-3xl mx-auto list-disc list-inside space-y-2">
-          <li>{t('financeIntro.bullet1')}</li>
-          <li>{t('financeIntro.bullet2')}</li>
-          <li>{t('financeIntro.bullet3')}</li>
-          <li>{t('financeIntro.bullet4')}</li>
+          <li>Porque nos especializamos en <strong>educación superior</strong> a nivel internacional</li>
+          <li>Porque somos profesionales en <strong>finanzas</strong> de la administración pública</li>
+          <li>Porque tenemos experiencia y conocimiento del <strong>sector público</strong></li>
+          <li>Porque ofrecemos soluciones personalizadas para optimizar tu <strong>estrategia financiera</strong></li>
+          <li>Porque tenemos relaciones con otras <strong>entidades de educación</strong> a nivel internacional</li>
+          <li>Porque quieres gestionar mejor los <strong>asuntos burocráticos</strong> en cada institución</li>
         </ul>
       </div>
     </section>
