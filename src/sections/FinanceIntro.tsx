@@ -1,5 +1,4 @@
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Button } from "@/components/ui/button";
 
 const FinanceIntro = () => {
   const { t } = useLanguage();
@@ -24,11 +23,6 @@ const FinanceIntro = () => {
           <li>Porque tenemos relaciones con otras <strong>entidades de educación</strong> a nivel internacional</li>
           <li>Porque quieres gestionar mejor los <strong>asuntos burocráticos</strong> en cada institución</li>
         </ul>
-
-        {/* Botón CTA */}
-        <Button size="lg" className="bg-hero hover:bg-hero-strong text-hero-foreground font-semibold px-8" asChild>
-          <a href="#contacto">Solicita una consultoría</a>
-        </Button>
       </div>
     </section>
   );
