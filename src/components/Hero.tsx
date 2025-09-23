@@ -12,13 +12,13 @@ const Hero = () => {
     <section className="relative overflow-hidden bg-hero-gradient">
       <div className="container py-16 md:py-24 flex flex-col items-center justify-center text-center max-w-4xl mx-auto">
         <div className="inline-block max-w-md mx-auto">
-          <h1 className="text-3xl md:text-5xl font-extrabold leading-tight tracking-tight text-hero-foreground">
-            <span className="block whitespace-nowrap">Realizamos <span className="underline font-black">consultoría financiera</span></span>
-            <span className="block whitespace-nowrap">especializada en <span className="underline font-black">educación superior</span></span>
-          </h1>
+          <h1
+            className="text-3xl md:text-5xl font-extrabold leading-tight tracking-tight text-hero-foreground"
+            dangerouslySetInnerHTML={{ __html: t('hero.title') }}
+          />
         </div>
         <p className="mt-4 text-sm md:text-lg uppercase tracking-[0.1em] text-hero-foreground/80">
-          Ayudamos a las universidades y entidades de educación superior a gestionar sus finanzas
+          {t('hero.subtitle')}
         </p>
 
         {/* Botones CTA */}
@@ -26,23 +26,23 @@ const Hero = () => {
           <Button
             size="xl"
             asChild
-            aria-label="Solicita una consultoría"
+            aria-label={t('hero.cta')}
             className="bg-white text-hero hover:bg-white/90 shadow-lg font-bold px-8 py-4 text-lg border-2 border-white"
           >
-            <a href="#contacto">Solicita una consultoría</a>
+            <a href="#contacto">{t('hero.cta')}</a>
           </Button>
           <Button
             size="xl"
             asChild
-            aria-label="Háblanos por WhatsApp"
+            aria-label={t('hero.whatsapp')}
             className="bg-green-500 text-white hover:bg-green-600 shadow-lg font-bold px-10 py-4 text-lg rounded-xl w-[260px]"
           >
             <a
-              href={`https://wa.me/34657169972?text=${encodeURIComponent("Hola, quiero más información sobre Nuovo Finance")}`}
+              href={`https://wa.me/34657169972?text=${encodeURIComponent(t('hero.whatsappMessage'))}`}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Háblanos por WhatsApp
+              {t('hero.whatsapp')}
             </a>
           </Button>
         </div>
