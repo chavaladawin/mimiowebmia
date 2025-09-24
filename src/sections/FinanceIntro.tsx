@@ -16,13 +16,25 @@ const FinanceIntro = () => {
 
         {/* Lista introductoria */}
         <ul className="text-lg text-muted-foreground max-w-3xl mx-auto list-disc list-inside space-y-2 mb-12">
-          <li>Porque nos especializamos en <strong>educación superior</strong> a nivel internacional</li>
-          <li>Porque somos profesionales en <strong>finanzas</strong> de la administración pública</li>
-          <li>Porque tenemos experiencia y conocimiento del <strong>sector público</strong></li>
-          <li>Porque ofrecemos soluciones personalizadas para optimizar tu <strong>estrategia financiera</strong></li>
-          <li>Porque tenemos relaciones con otras <strong>entidades de educación</strong> a nivel internacional</li>
-          <li>Porque quieres gestionar mejor los <strong>asuntos burocráticos</strong> en cada institución</li>
-        </ul>
+          <li>
+            {t('financeIntro.bullet1.part1')} <strong>{t('financeIntro.bullet1.bold')}</strong>{t('financeIntro.bullet1.part2')}
+            </li>
+          <li>
+            {t('financeIntro.bullet2.part1')} <strong>{t('financeIntro.bullet2.bold')}</strong>{t('financeIntro.bullet2.part2')}
+          </li>
+          <li>
+            {t('financeIntro.bullet3.part1')} <strong>{t('financeIntro.bullet3.bold')}</strong>{t('financeIntro.bullet3.part2')}
+          </li>
+          <li>
+            {t('financeIntro.bullet4.part1')} <strong>{t('financeIntro.bullet4.bold')}</strong>{t('financeIntro.bullet4.part2')}
+          </li>
+          <li>
+            {t('financeIntro.bullet5.part1')} <strong>{t('financeIntro.bullet5.bold')}</strong>{t('financeIntro.bullet5.part2')}
+          </li>
+          <li>
+            {t('financeIntro.bullet6.part1')} <strong>{t('financeIntro.bullet6.bold')}</strong>{t('financeIntro.bullet6.part2')}
+          </li>
+	</ul>
       </div>
     </section>
   );
