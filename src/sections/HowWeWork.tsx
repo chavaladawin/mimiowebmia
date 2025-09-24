@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Rocket, Handshake, Target } from "lucide-react";
+import { User, Handshake, Search, Package } from "lucide-react"; // Íconos para cada fase
 
 const HowWeWork = () => {
   const { t } = useLanguage();
@@ -17,7 +17,7 @@ const HowWeWork = () => {
         <div className="space-y-8">
           {/* Fase 1 */}
           <div className="flex items-start gap-4 p-6 bg-white shadow-lg rounded-lg">
-            <Rocket className="text-hero w-8 h-8" />
+            <User className="text-hero w-8 h-8" /> {/* Ícono para Contacto Inicial */}
             <div>
               <h3 className="text-xl font-semibold text-foreground">{t('methodology.step1.title')}</h3>
               <p className="text-muted-foreground">{t('methodology.step1.desc')}</p>
@@ -25,7 +25,7 @@ const HowWeWork = () => {
           </div>
           {/* Fase 2 */}
           <div className="flex items-start gap-4 p-6 bg-white shadow-lg rounded-lg">
-            <Handshake className="text-hero w-8 h-8" />
+            <Handshake className="text-hero w-8 h-8" /> {/* Ícono para Puesta en Común */}
             <div>
               <h3 className="text-xl font-semibold text-foreground">{t('methodology.step2.title')}</h3>
               <p className="text-muted-foreground">{t('methodology.step2.desc')}</p>
@@ -33,10 +33,18 @@ const HowWeWork = () => {
           </div>
           {/* Fase 3 */}
           <div className="flex items-start gap-4 p-6 bg-white shadow-lg rounded-lg">
-            <Target className="text-hero w-8 h-8" />
+            <Search className="text-hero w-8 h-8" /> {/* Ícono para Investigación */}
             <div>
               <h3 className="text-xl font-semibold text-foreground">{t('methodology.step3.title')}</h3>
               <p className="text-muted-foreground">{t('methodology.step3.desc')}</p>
+            </div>
+          </div>
+          {/* Fase 4 */}
+          <div className="flex items-start gap-4 p-6 bg-white shadow-lg rounded-lg">
+            <Package className="text-hero w-8 h-8" /> {/* Ícono para Entrega */}
+            <div>
+              <h3 className="text-xl font-semibold text-foreground">{t('methodology.step4.title')}</h3>
+              <p className="text-muted-foreground">{t('methodology.step4.desc')}</p>
             </div>
           </div>
         </div>
@@ -44,7 +52,13 @@ const HowWeWork = () => {
         {/* ¿Todavía tienes dudas? */}
         <div className="mt-12 bg-green-50 py-12 text-center rounded-lg">
           <h2 className="text-3xl font-bold text-foreground mb-6">{t('methodology.doubts.title')}</h2>
-          <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">{t('methodology.doubts.desc')}</p>
+          <ul className="text-muted-foreground mb-8 max-w-2xl mx-auto space-y-2 list-disc list-inside">
+            <li>{t('methodology.doubts.bullet1')}</li>
+            <li>{t('methodology.doubts.bullet2')}</li>
+            <li>{t('methodology.doubts.bullet3')}</li>
+            <li>{t('methodology.doubts.bullet4')}</li>
+            <li>{t('methodology.doubts.bullet5')}</li>
+          </ul>
           <Button
             size="xl"
             asChild

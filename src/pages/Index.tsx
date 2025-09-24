@@ -18,36 +18,36 @@ const Index = () => {
         <FinanceIntro />
 
         {/* Sección "Cuándo necesitas una consultoría" */}
-        <section id="productos" className="py-16 border-t">
+        <section id="productos" className="py-16 border-t bg-green-100/50">
           <div className="container text-center">
             <header className="mb-12">
               <h2 className="text-4xl font-bold mb-4">
-                <span className="text-foreground">Cuando necesitas una </span>
-                <span className="text-hero">consultoría especializada en educación superior?</span>
+                <span className="text-foreground">{t('services.title.part1')}</span>
+                <span className="text-hero">{t('services.title.part2')}</span>
               </h2>
             </header>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto items-start text-left">
               <ul className="text-lg text-muted-foreground list-disc list-inside space-y-2">
-                <li>Previa a <strong>auditoría</strong> financiera</li>
-                <li><strong>Crisis</strong> financiera</li>
-                <li>Gestión de la <strong>deuda</strong> ineficiente</li>
-                <li><strong>Recursos</strong> ociosos</li>
-                <li>Gestión de <strong>riesgos</strong> y sostenibilidad</li>
+                <li>{t('services.example1')}</li>
+                <li>{t('services.example2')}</li>
+                <li>{t('services.example3')}</li>
+                <li>{t('services.example4')}</li>
+                <li>{t('services.example5')}</li>
               </ul>
 
               <ul className="text-lg text-muted-foreground list-disc list-inside space-y-2">
-                <li>Control <strong>presupuestario</strong></li>
-                <li>Análisis de la <strong>salud</strong> financiera</li>
-                <li><strong>Cambios</strong> en el sector</li>
-                <li>Eres una <strong>universidad</strong></li>
-                <li>Eres una <strong>entidad</strong> relacionada con educación superior</li>
+                <li>{t('services.example6')}</li>
+                <li>{t('services.example7')}</li>
+                <li>{t('services.example8')}</li>
+                <li>{t('services.example9')}</li>
+                <li>{t('services.example10')}</li>
               </ul>
             </div>
 
             <div className="mt-8">
               <Button size="lg" className="bg-hero hover:bg-hero-strong text-hero-foreground font-semibold px-8" asChild>
-                <a href="#contacto">Solicita una consultoría</a>
+                <a href="#contacto">{t('hero.cta')}</a>
               </Button>
             </div>
           </div>

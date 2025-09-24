@@ -10,41 +10,49 @@ const Hero = () => {
   const { t } = useLanguage();
   return (
     <section className="relative overflow-hidden bg-hero-gradient">
-      <div className="container py-16 md:py-24 flex flex-col items-center justify-center text-center max-w-4xl mx-auto">
-        <div className="inline-block max-w-md mx-auto">
-          <h1 className="text-3xl md:text-5xl font-extrabold leading-tight tracking-tight text-hero-foreground">
-            <span className="block whitespace-nowrap">{t('hero.title.part1')}<span className="underline font-black">{t('hero.title.rentable')}</span></span>
-            <span className="block whitespace-nowrap">{t('hero.title.part2')}<span className="underline font-black">{t('hero.title.estrategia')}</span></span>
-          </h1>
-        </div>
-        <p className="mt-4 text-sm md:text-lg uppercase tracking-[0.1em] text-hero-foreground/80">
-          {t('hero.subtitle')}
-        </p>
+      <div className="container py-16 md:py-24 text-center mx-auto">
+        {/* TÍTULO LIBRE (centrado respecto al viewport, sin límite de max-w) */}
+        <h1 className="text-3xl md:text-5xl font-extrabold leading-tight tracking-tight text-hero-foreground text-center">
+          <span className="block whitespace-nowrap">
+            {t("hero.title.part1")}
+            <span className="underline font-black">{t("hero.title.rentable")}</span>
+          </span>
+          <span className="block whitespace-nowrap" dangerouslySetInnerHTML={{ __html: t("hero.title.estrategia") }} />
+        </h1>
 
-        {/* Botones CTA */}
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <Button
-            size="xl"
-            asChild
-            aria-label={t('hero.cta')}
-            className="bg-white text-hero hover:bg-white/90 shadow-lg font-bold px-8 py-4 text-lg border-2 border-white"
-          >
-            <a href="#contacto">{t('hero.cta')}</a>
-          </Button>
-          <Button
-            size="xl"
-            asChild
-            aria-label={t('hero.whatsapp')}
-            className="bg-green-500 text-white hover:bg-green-600 shadow-lg font-bold px-10 py-4 text-lg rounded-xl w-[260px]"
-          >
-            <a
-              href={`https://wa.me/34657169972?text=${encodeURIComponent(t('hero.whatsappMessage'))}`}
-              target="_blank"
-              rel="noopener noreferrer"
+        {/* SUBTÍTULO Y CTA ENCAJONADOS */}
+        <div className="max-w-2xl mx-auto">
+          <p className="mt-6 text-sm md:text-lg uppercase tracking-[0.1em] text-hero-foreground/80 text-center">
+            {t("hero.subtitle")}
+          </p>
+
+          {/* Botones CTA */}
+          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
+              size="xl"
+              asChild
+              aria-label={t("hero.cta")}
+              className="bg-white text-hero hover:bg-white/90 shadow-lg font-bold px-8 py-4 text-lg border-2 border-white"
             >
-              {t('hero.whatsapp')}
-            </a>
-          </Button>
+              <a href="#contacto">{t("hero.cta")}</a>
+            </Button>
+            <Button
+              size="xl"
+              asChild
+              aria-label={t("hero.whatsapp")}
+              className="bg-green-500 text-white hover:bg-green-600 shadow-lg font-bold px-10 py-4 text-lg rounded-xl w-[260px]"
+            >
+              <a
+                href={`https://wa.me/34657169972?text=${encodeURIComponent(
+                  t("hero.whatsappMessage")
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t("hero.whatsapp")}
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
 
